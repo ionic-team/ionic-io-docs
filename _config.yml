@@ -3,6 +3,7 @@ title: Ionic.io
 email: help@ionic.io
 description: "Docs for ionic.io"
 baseurl: ""
+name: Ionic.io Docs
 url: "http://ionic.io"
 
 # Build settings
