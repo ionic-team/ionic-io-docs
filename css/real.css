@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url('https://code.ionicframework.com/assets/fonts/28882F_0_0.eot');
+  src: url('https://code.ionicframework.com/assets/fonts/28882F_0_0.eot?#iefix') format('embedded-opentype'), url('https://code.ionicframework.com/assets/fonts/28882F_0_0.woff') format('woff'), url('https://code.ionicframework.com/assets/fonts/28882F_0_0.ttf') format('truetype'); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url('https://code.ionicframework.com/assets/fonts/28882F_1_0.eot');
+  src: url('https://code.ionicframework.com/assets/fonts/28882F_1_0.eot?#iefix') format('embedded-opentype'), url('https://code.ionicframework.com/assets/fonts/28882F_1_0.woff') format('woff'), url('https://code.ionicframework.com/assets/fonts/28882F_1_0.ttf') format('truetype'); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro-UltLt';
+  src: url('https://code.ionicframework.com/assets/fonts/29CC36_0_0.eot');
+  src: url('https://code.ionicframework.com/assets/fonts/29CC36_0_0.eot?#iefix') format('embedded-opentype'), url('https://code.ionicframework.com/assets/fonts/29CC36_0_0.woff') format('woff'), url('https://code.ionicframework.com/assets/fonts/29CC36_0_0.ttf') format('truetype'); }
+body {
+  font-family:     "AvenirNextLTPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 26px;
+}
+a {
+  color: #4E8EF7;
+}
+nav ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+h1, h2, h3, h4, h5, h6, .btn {
+  font-weight: normal;
+  font-family: "AvenirNextLTPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav ul {
+  padding: 0;
+}
+nav > ul > li {
+  margin: 60px 0 0 0;
+}
+nav > ul > li:first-child {
+  margin-top: 0;
+}
+nav > ul > li > a {
+  color: #000;
+  text-decoration: none;
+  font-family: "AvenirNextLTPro-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ionic-logo {
+  background: url('/img/ionic.png') no-repeat transparent;
+  width: 64px;
+  height: 64px;
+  background-size: 100%;
+  opacity: 0.2;
+  display: block;
+  margin: 40px auto;
+}
