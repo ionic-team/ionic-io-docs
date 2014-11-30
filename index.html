@@ -4,17 +4,10 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <h1>Ionic Platform Docs</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <p>
+    The Ionic Platform makes it easy to build, test, deploy, and scale your hybrid mobile apps with our suite
+    of hybrid app services and tools.
+  </p>
 </div>
