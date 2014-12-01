@@ -25,7 +25,11 @@ nav ul li {
 }
 h1, h2, h3, h4, h5, h6, .btn {
   font-weight: normal;
-  font-family: "AvenirNextLTPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNextLTPro-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 40px 0 0;
+}
+h1:first-child, h2:first-child {
+  margin-top: 15px;
 }
 nav ul {
   padding: 0;
