@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: formula
 ---
 
 <h2>Formulas</h2>
