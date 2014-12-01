@@ -4,7 +4,7 @@ layout: default
 
 <img src="/img/package-preview.png" style="width: 76px">
 
-Ionic Build
+Build apps with Ionic Build
 -----
 
 The Ionic Build service makes it possible to build binary app bundles suitable for publishing on the Apple App Store or Goole Play Store.
