@@ -81,3 +81,11 @@ $ ionic deploy
 ```
 
 This will deploy your current app web content and clients will now detect that there is a new version of the app.
+
+## Dashboard
+
+The dashboard for your project makes it easy to deploy and tag specific versions with release notes:
+
+<img src="/img/deploy-ss.png" style="max-width: 100%">
+
+Tap "DEPLOY" to promote that specific version to production. Depending on your app update process, users may be notified and your app updated with the latest code.
