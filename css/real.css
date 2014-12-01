@@ -19,6 +19,26 @@ body {
 a {
   color: #4E8EF7;
 }
+footer {
+  margin-top: 50px;
+}
+footer ul li {
+  list-style: none;
+  margin: 20px 0;
+  display: inline-block;
+}
+#footer ul li a {
+  color: #4F8EF7 !important;
+  opacity: 0.5;
+  font-family: "AvenirNextLTPro-UltLt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 13px;
+  margin-right: 40px;
+}
+#footer ul li a:hover {
+  opacity: 1;
+}
 nav ul li {
   list-style: none;
   margin: 20px 0;
