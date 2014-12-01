@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="/img/liveupdate-preview.png" style="width: 76px">
+
 Ionic Deploy
 -----
 
@@ -16,7 +18,7 @@ each app is signed with a certificate ensuring its integrity. This is a limitati
 out of our hands. However, the vast majority of app updates performed are simple HTML, CSS, and Javascript
 code updates from the `www` folder in a Ionic/Cordova app.
 
-### Using Ionic Deploy
+## Using Ionic Deploy
 
 There are three parts to the Ionic Deploy service: the client-side JS library, the command-line interface, and the dashboard view.
 
@@ -24,7 +26,7 @@ The JS library makes it possible to detect available updates, notify the user, a
 interface deploys new releases and manages old ones. The Dashboard view is our web-based tool for managing
 deployed app versions which can be shared across a team.
 
-### Javascript Library
+## Javascript Library
 
 The JS Library for the deploy service provides means for watching for and performing app updates. There are two main modes of
 operation: __user-prompt__, and __auto-update__. The user-prompt method allows you, the developer, to 
@@ -69,7 +71,7 @@ $ionicUpdate.check().then(function(response) {
 })
 ```
 
-### Command-line
+## Command-line
 
 To release new versions of your app, make sure you've `upload` at least once to register your app with the server,
 then run 

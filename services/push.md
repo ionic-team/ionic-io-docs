@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="/img/push-preview.png" style="width: 76px">
+
 Ionic Push
 ------
 

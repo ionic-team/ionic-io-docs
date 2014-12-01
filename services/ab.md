@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="/img/ab-preview.png" style="width: 76px">
+
 Ionic A/B Testing
 ------
 

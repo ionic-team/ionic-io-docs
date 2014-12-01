@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="/img/package-preview.png" style="width: 76px">
+
 Ionic Build
 -----
 

@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="/img/creator-preview.png" style="width: 76px">
+
 Ionic Creator
 -----
 

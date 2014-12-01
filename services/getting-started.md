@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="/img/services.png" style="max-width: 100%">
+
 Getting started with the Ionic Platform
 -----
 

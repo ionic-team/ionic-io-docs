@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<img src="/img/analytics-preview.png" style="width: 76px">
+
 Ionic Analytics
 -----
 
@@ -14,7 +16,7 @@ Unlike other analytics providers, Ionic can infer user behavior through the deep
 integration of the analytics system with the UI layer. This means Ionic can automatically
 track taps and interactions, and also associate events with varios states in your app's routing (to generate heatmaps, for example).
 
-### Using Ionic Analytics
+## Using Ionic Analytics
 
 We start by adding the analytics service client code:
 
@@ -22,7 +24,7 @@ We start by adding the analytics service client code:
 $ ionic add ionic-service-analytics
 ```
 
-### Tracking events
+## Tracking events
 
 An "event" in the Analytics system is just a key/value pair, where the key
 is an event name, and the value is an object with any data you'd like to 
@@ -36,7 +38,7 @@ associate with that event:
 });
 ```
 
-### Auto Tracking
+## Auto Tracking
 
 To enable smart auto tracking of events, add `ion-track-auto` to the `<body>` tag:
 
@@ -47,7 +49,7 @@ To enable smart auto tracking of events, add `ion-track-auto` to the `<body>` ta
 This will automatically detect taps and clicks and send them to the server. Note: this is currently
 required for heatmap support.
 
-### Simple button directives
+## Simple button directives
 
 To quickly track a specific event on a tap event, use the `ion-track-click` attribute:
 
