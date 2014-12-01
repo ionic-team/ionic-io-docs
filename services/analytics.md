@@ -4,7 +4,7 @@ layout: default
 
 <img src="/img/analytics-preview.png" style="width: 76px">
 
-Ionic Analytics
+Tracking events with Ionic Analytics
 -----
 
 *Note: make sure to follow the [Getting Started](/services/getting-started) guide to install the core platform client libraries
