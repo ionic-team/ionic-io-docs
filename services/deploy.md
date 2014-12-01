@@ -4,7 +4,7 @@ layout: default
 
 <img src="/img/liveupdate-preview.png" style="width: 76px">
 
-Ionic Deploy
+Deploying app updates with Ionic Deploy
 -----
 
 The Ionic deploy service makes it possible to ship new updates to your app without
