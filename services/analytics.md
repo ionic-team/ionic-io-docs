@@ -5,7 +5,7 @@ layout: default
 Ionic Analytics
 -----
 
-*Note: make sure to follow the [Getting Started](/docs/services/getting-started) guide to install the core platform client libraries
+*Note: make sure to follow the [Getting Started](/overview/getting-started) guide to install the core platform client libraries
 before following this guide.*
 
 The Ionic Analytics service makes it easy to add powerful analytics to your hybrid mobile apps.
