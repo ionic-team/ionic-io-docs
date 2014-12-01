@@ -14,7 +14,7 @@ app does not change.
 
 One important caveat is that this plugin is not able to perform binary app updates. There is
 no possible mechanism to modify an App binary without resubmission to the app store, considering
-each app is signed with a certificate ensuring its integrity. This is a limitation on Apple's end, and is 
+each app is signed with a certificate ensuring its integrity. This is just how it works on the App Store, and it's 
 out of our hands. However, the vast majority of app updates performed are simple HTML, CSS, and Javascript
 code updates from the `www` folder in a Ionic/Cordova app.
 
