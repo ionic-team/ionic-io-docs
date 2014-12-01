@@ -22,7 +22,9 @@ Run
 $ ionic upload
 ```
 
-To create and sync your Ionic app to the Ionic dashboard
+To create and sync your Ionic app to the Ionic dashboard. Note: this will create and modify an ionic.project
+file in the root of your app's code directory. Do not modify the app_id field in the JSON, it is supplied
+by the server.
 
 ### Step 3: Identify your app
 
@@ -39,7 +41,6 @@ Next, Add the following code into your `www/js/app.js` file:
 angular.module('test', ['ionic.services.common'])
 
 .config(['$ionicAppProvider', function($ionicAppProvider) {
-
   // Identify app
   $ionicAppProvider.identify({
     // The App ID for the server
