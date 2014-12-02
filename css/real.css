@@ -27,6 +27,10 @@ footer ul li {
   margin: 20px 0;
   display: inline-block;
 }
+
+#content {
+  word-wrap: break-word;
+}
 #footer ul li a {
   color: #4F8EF7 !important;
   opacity: 0.5;
@@ -41,7 +45,7 @@ footer ul li {
 }
 nav ul li {
   list-style: none;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 h1, h2, h3, h4, h5, h6, .btn {
   font-weight: normal;
@@ -57,7 +61,7 @@ nav ul {
   padding: 0;
 }
 nav > ul > li {
-  margin: 60px 0 0 0;
+  margin: 40px 0 0 0;
 }
 nav > ul > li:first-child {
   margin-top: 0;
@@ -68,6 +72,8 @@ nav > ul > li > a {
   font-family: "AvenirNextLTPro-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
+}
+nav > ul > li > ul > li > ul {
 }
 
 .ionic-logo {
