@@ -36,7 +36,7 @@ In your `www/index.html`, add the following script to the `<head>`:
   ...
   <head>
     ...
-    <script src="lib/ionic-service-core/ionic-service-core.js">
+    <script src="lib/ionic-service-core/ionic-core.js">
     <script src="lib/ionic-service-analytics/ionic-analytics.js">
   </head>
 ```
