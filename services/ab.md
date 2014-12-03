@@ -27,7 +27,7 @@ To use a Cloud Value, just inject the `$ionicAb` service and grab the correct na
 
   $log.debug('initial value', $scope.initialPrice);
 });
-
+```
 ### Experiments
 
 Experiments are created on the server and specify a set of experimental values
