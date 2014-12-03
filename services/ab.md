@@ -10,19 +10,21 @@ Ionic A/B Testing
 The A/B Testing service, combined with the Deploy service, makes it easy to run visual and functional
 experiments in real-time, all while integrating with your Analytics insights.
 
-### Cloud Value
+### Live Value
 
-Cloud Value are basically just that: variables that are synced with a value on the backend. CVs make
+Live Value are basically just that: variables that are synced with a value on the backend. CVs make
 it easy to tweak variables in your code without rebuilding your app, enabling live experimentation, debugging, and
 refinement.
 
 To use a Cloud Value, just inject the `$ionicAb` service and grab the correct named value:
 
 ```javascript
+
+
 .controller('AppCtrl', function($scope, $log, $ionicAb) {
   // Grab a dynamic variable set from the server.
-  $ionicAb.value('initialPrice', 50).then(function(val) {
-    $scope.initialPrice = val;
+  $ionicAb.value('initialPrice', function(val) {
+    $scope.initialPrice = val; // => 50
   });
 
   $log.debug('initial value', $scope.initialPrice);
