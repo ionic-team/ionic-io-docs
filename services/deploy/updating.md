@@ -9,25 +9,33 @@ Updating the app
 
 To actually perform an app update on the client side, you can use the `$ionicDeploy` service.
 
+## Simple mode
+
+To detect and perform app updates, use 
+
+```javascript
+$ionicDeploy.check().then(function(response) {
+});
+```
 
 ## Full manual mode
 
 To control the complete app update cycle, use the following code snippet
-that checks for updates, downloads, extracts, and then loads the new version. `$ionicUpdate.check()` will
+that checks for updates, downloads, extracts, and then loads the new version. `$ionicDeploy.check()` will
 continuously check for new updates at a predefined interval.
 
 ```javascript
 angular.module('myApp', ['ionic', 'ionic.service.deploy'])
 
-.run(['$ionicUpdate', function($ionicUpdate) {
+.run(['$ionicDeploy', function($ionicDeploy) {
   // Check for updates
-  $ionicUpdate.check().then(function(response) {
+  $ionicDeploy.check().then(function(response) {
      // response will be true/false
      if (response) {
          // Download the updates
-         $ionicUpdate.download().then(function() {
+         $ionicDeploy.download().then(function() {
              // Extract the updates
-             $ionicUpdate.extract().then(function() {
+             $ionicDeploy.extract().then(function() {
                  // Load the updated version
                  $ionicTrack.load();
              }, function(error) {
@@ -45,7 +53,7 @@ angular.module('myApp', ['ionic', 'ionic.service.deploy'])
      }
   } else {
      // No updates, load the most up to date version of the app
-     $ionicUpdate.load();
+     $ionicDeploy.load();
   }, function(error) {
      // Error checking for updates
   })
