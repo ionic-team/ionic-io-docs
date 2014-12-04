@@ -66,9 +66,10 @@ will be bound to them:
 ```javascript
 $ionicUser.identify({
   username: "Timmy",
-  email: 'timmy@otoole.net`
+  email: 'timmy@otoole.net'
 });
 ```
 
 Feel free to send any data you'd like to associate with future events.
 
+Grab the current user at any time by calling `$ionicUser.get()`.

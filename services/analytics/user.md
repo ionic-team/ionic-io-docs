@@ -20,7 +20,7 @@ will be bound to them:
 ```javascript
 $ionicUser.identify({
   username: "Timmy",
-  email: 'timmy@otoole.net`
+  email: 'timmy@otoole.net'
 });
 ```
 
