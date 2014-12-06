@@ -15,6 +15,8 @@ Adding Crosswalk
 Specifying Crosswalk Version
 ###
 
+Simply specify the Crosswalk version number after the `@` shown below as `9.38.208.10`.
+
 `ionic browser add crosswalk@9.38.208.10`
 
 You can find all of the Crosswalk versions [here](https://download.01.org/crosswalk/releases/crosswalk/android/stable/).
