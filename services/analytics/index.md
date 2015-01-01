@@ -21,7 +21,7 @@ track taps and interactions, and also associate events with varios states in you
 Installing Ionic Analytics is easy. Just use the `$ ionic service` command to add it:
 
 ```bash
-$ ionic service add analytics
+$ ionic add ionic-service-analytics
 ```
 
 ## Including the JS Library
@@ -44,7 +44,7 @@ In your `www/index.html`, add the following script to the `<head>`:
 Next, make sure to include the `ionic.service.analytics` module in your main Angular module:
 
 ```javascript
-angular.module('myApp', ['ionic',  'ionic.service.analytics'])
+angular.module('myApp', ['ionic',  'ionic.services.analytics'])
 ```
 
 ## Going deeper

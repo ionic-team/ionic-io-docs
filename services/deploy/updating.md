@@ -25,7 +25,7 @@ that checks for updates, downloads, extracts, and then loads the new version. `$
 continuously check for new updates at a predefined interval.
 
 ```javascript
-angular.module('myApp', ['ionic', 'ionic.service.deploy'])
+angular.module('myApp', ['ionic', 'ionic.services.deploy'])
 
 .run(['$ionicDeploy', function($ionicDeploy) {
   // Check for updates

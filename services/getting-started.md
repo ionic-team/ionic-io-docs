@@ -28,17 +28,17 @@ by the server.
 
 ### Step 3: Identify your app
 
-Install the `ionic-service-common` client code:
+Install the `ionic-service-core` client code:
 
 ```bash
-$ ionic add ionic-service-common
+$ ionic add ionic-service-core
 ```
 
 Next, Add the following code into your `www/js/app.js` file:
 
 ```javascript
-// Add the 'ionic.services.common' module to your main angular module:
-angular.module('test', ['ionic.services.common'])
+// Add the 'ionic.services.core' module to your main angular module:
+angular.module('test', ['ionic.services.core'])
 
 .config(['$ionicAppProvider', function($ionicAppProvider) {
   // Identify app
