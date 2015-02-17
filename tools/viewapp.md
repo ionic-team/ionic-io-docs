@@ -17,6 +17,27 @@ The Ionic View app makes it easy to test your Ionic apps on multiple devices wit
 and distribute application binaries. For example, you can send a test build to a client
 immediately as long as they download and install the Ionic View app on their iOS or Android device.
 
+## Supported plugins
+
+The following is a list of plugins supported by View:
+
+- com.brodysoft.sqlitePlugin 1.0.3 "Brodysoft SQLitePlugin"
+- com.ionic.keyboard 1.0.3 "Keyboard"
+- com.phonegap.plugins.barcodescanner 1.1.0 "BarcodeScanner"
+- org.apache.cordova.battery-status 0.2.12 "Battery"
+- org.apache.cordova.camera 0.3.4 "Camera"
+- org.apache.cordova.console 0.2.12 "Console"
+- org.apache.cordova.device 0.2.13 "Device"
+- org.apache.cordova.device-motion 0.2.11 "Device Motion"
+- org.apache.cordova.device-orientation 0.3.10 "Device Orientation"
+- org.apache.cordova.dialogs 0.2.11 "Notification"
+- org.apache.cordova.geolocation 0.3.11 "Geolocation"
+- org.apache.cordova.globalization 0.3.3 "Globalization"
+- org.apache.cordova.network-information 0.2.14 "Network Information"
+- org.apache.cordova.splashscreen 0.3.5 "Splashscreen"
+- org.apache.cordova.vibration 0.3.12 "Vibration"
+- org.chromium.zip 1.0.0 "Zip"
+
 ## Logging in
 
 After you've installed the View app on iOS and/or Android, open it and either create a new Ionic account if you
