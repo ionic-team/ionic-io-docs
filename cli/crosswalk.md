@@ -24,4 +24,4 @@ You can find all of the Crosswalk versions [here](https://download.01.org/crossw
 Removing Crosswalk
 ###
 
-`ionic broswer remove crosswalk` - This will remove the Crosswalk web view and revert the project back to use standard Android webviews.
+`ionic browser remove crosswalk` - This will remove the Crosswalk web view and revert the project back to use standard Android webviews.
