@@ -45,7 +45,7 @@ For example, to send an event on tap:
 ```
 
 Where `ion-track-tap` tracks tap events and sends an event with the event name of `"Face Tapped"` and
-event data copied from the current object value of `scopeData` which must be in scope.
+event data copied from the current object value of `scopeData`, which must be in scope.
 
 You can also supply an object string directly instead of a scope object:
 
