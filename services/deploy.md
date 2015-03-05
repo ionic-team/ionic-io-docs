@@ -9,7 +9,7 @@ Deploying app updates with Ionic Deploy
 
 The Ionic deploy service makes it possible to ship new updates to your app without
 going through the app store resubmission process. For many changes, Apple
-allows immediate app updating without resubmission if the core functionality or purpose of the
+allows immediate app updating without resubmission, if the core functionality or purpose of the
 app does not change.
 
 One important caveat is that this plugin is not able to perform binary app updates. There is
@@ -24,7 +24,7 @@ There are three parts to the Ionic Deploy service: the client-side JS library, t
 
 The JS library makes it possible to detect available updates, notify the user, and perform an update. The command-line
 interface deploys new releases and manages old ones. The Dashboard view is our web-based tool for managing
-deployed app versions which can be shared across a team.
+deployed app versions, which can be shared across a team.
 
 ## Javascript Library
 
@@ -73,12 +73,12 @@ $ionicUpdate.check().then(function(response) {
 
 ## Command-line
 
-To release new versions of your app, make sure you've `upload` at least once to register your app with the server,
-then run 
+To release new versions of your app, make sure you've typed `upload` at least once to register your app with the server,
+then run: 
 
 ```bash
 $ ionic deploy
 ```
 
-This will deploy your current app web content and clients will now detect that there is a new version of the app.
+This will deploy your current app web content, and clients will now detect that there is a new version of the app.
 
