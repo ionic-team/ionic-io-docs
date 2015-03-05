@@ -13,9 +13,11 @@ Currently, the service supports sending notifications on both Apple's APNS and G
 
 ### Syncing Certificates and Identities
 
-Before you can use the push notification service, you must register an app on the Apple Developer Center and/or the Google Play Console. [iOS](http://) [Android](http://)
+Before you can use the push notification service, you must register an app on the Apple Developer Center and/or the Google Play Console:<br>
+[iOS](http://)<br>
+[Android](http://)
 
-Once you have your certificates, sync them with the ionic service:
+Once you have your certificates, sync them with the Ionic service:
 
 ```javascript
 $ ionic add:cert /path/to/cert
