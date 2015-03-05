@@ -8,7 +8,7 @@ Deploying app updates with Ionic Deploy
 -----
 
 There are currently two ways to deploy new versions of your app. The first relies on the `ionic` command line
-tool, and if you haven't uploaded a version of your app to the Ionic Platform you'll need to use the command
+tool, and if you haven't uploaded a version of your app to the Ionic Platform, you'll need to use the command
 line to do that first.
 
 The second one uses the Ionic Platform dashboard to deploy older versions of your app or to add notes to existing versions.
@@ -29,7 +29,7 @@ Once you've uploaded the new version of your app, you can deploy it:
 $ ionic deploy
 ```
 
-This will deploy your current app web content and clients will now detect that there is a new version of the app.
+This will deploy your current app web content, and clients will now detect that there is a new version of the app.
 
 ## Deploying old versions from the dashboard
 
