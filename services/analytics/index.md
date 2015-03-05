@@ -14,7 +14,7 @@ The Ionic Analytics service makes it easy to add powerful analytics to your hybr
 
 Unlike other analytics providers, Ionic can infer user behavior through the deep
 integration of the analytics system with the UI layer. This means Ionic can automatically
-track taps and interactions, and also associate events with varios states in your app's routing (to generate heatmaps, for example).
+track taps and interactions and also associate events with various states in your app's routing (to generate heatmaps, for example).
 
 ## Installing the service
 
