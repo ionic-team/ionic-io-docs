@@ -13,7 +13,7 @@ To enable smart auto tracking of events, add `ion-track-auto` to the `<body>` ta
   <body ng-app="myApp" ion-track-auto>
 ```
 
-This will automatically detect taps and clicks and send them to the server. Note: this is currently
+This will automatically detect taps and clicks and send them to the server. Note: This is currently
 required for heatmap support.
 
 ## Simple event directives
