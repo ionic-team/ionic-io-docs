@@ -6,7 +6,7 @@ Getting started with the Ionic Platform
 -----
 
 The Ionic Platform offers a range of powerful, hybrid-focused mobile backend services and tools to make it easy to build
-rich hybrid apps in a fraction of the time.
+beautiful, performant hybrid apps in an efficient timeframe.
 
 Follow this simple guide to getting started on the Ionic Platform:
 
@@ -16,15 +16,13 @@ First, [Create an Account](https://apps.ionic.io/signup) on the Ionic Platform s
 
 ### Step 2: Link your app
 
-Run
+To create and sync your Ionic app to the Ionic dashboard, run:
 
 ```bash
 $ ionic upload
 ```
 
-To create and sync your Ionic app to the Ionic dashboard. Note: this will create and modify an ionic.project
-file in the root of your app's code directory. Do not modify the app_id field in the JSON, it is supplied
-by the server.
+Note: This will create and modify an ionic.project file in the root of your app's code directory. Do not modify the app_id field in the JSON; it is supplied by the server.
 
 ### Step 3: Identify your app
 
@@ -52,9 +50,9 @@ angular.module('test', ['ionic.services.common'])
 }])
 ```
 
-Replacing `YOUR_APP_ID` and `YOUR_CLIENT_API_KEY` with the correct values from the app settings page of your app.
+Replace `YOUR_APP_ID` and `YOUR_CLIENT_API_KEY` with the correct values from the app settings page of your app.
 
 ### That's it!
 
-Have a cookie, you now have the core code needed to identify your app with the Ionic Platform. Now you can choose a core
+Have a cookie; you now have the core code needed to identify your app with the Ionic Platform. Now you can choose a core
 Ionic service from the left and try it out. Follow the specific service guide to continue.
