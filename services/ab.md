@@ -16,7 +16,7 @@ Cloud Value are basically just that: variables that are synced with a value on t
 it easy to tweak variables in your code without rebuilding your app, enabling live experimentation, debugging, and
 refinement.
 
-To use a Cloud Value, just inject the `$ionicAb` service and grab the correct named value:
+To use a Cloud Value, just inject the `$ionicAb` service and grab the correctly named value:
 
 ```javascript
 .controller('AppCtrl', function($scope, $log, $ionicAb) {
