@@ -6,7 +6,7 @@ Getting started with the Ionic Platform
 -----
 
 The Ionic Platform offers a range of powerful, hybrid-focused mobile backend services and tools to make it easy to build
-beautiful, performant hybrid apps in an efficient timeframe.
+beautiful, performant hybrid apps. And do it quickly.
 
 Follow this simple guide to getting started on the Ionic Platform:
 
@@ -26,17 +26,17 @@ Note: This will create and modify an ionic.project file in the root of your app'
 
 ### Step 3: Identify your app
 
-Install the `ionic-service-common` client code:
+Install the `ionic-service-core` client code:
 
 ```bash
-$ ionic add ionic-service-common
+$ ionic add ionic-service-core
 ```
 
 Next, Add the following code into your `www/js/app.js` file:
 
 ```javascript
-// Add the 'ionic.services.common' module to your main angular module:
-angular.module('test', ['ionic.services.common'])
+// Add the 'ionic.services.core' module to your main angular module:
+angular.module('test', ['ionic.services.core'])
 
 .config(['$ionicAppProvider', function($ionicAppProvider) {
   // Identify app
