@@ -34,7 +34,6 @@ The following is a list of plugins supported by View:
 - org.apache.cordova.geolocation 0.3.11 "Geolocation"
 - org.apache.cordova.globalization 0.3.3 "Globalization"
 - org.apache.cordova.network-information 0.2.14 "Network Information"
-- org.apache.cordova.splashscreen 0.3.5 "Splashscreen"
 - org.apache.cordova.vibration 0.3.12 "Vibration"
 - org.chromium.zip 1.0.0 "Zip"
 
