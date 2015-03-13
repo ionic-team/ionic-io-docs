@@ -68,4 +68,6 @@ The POST data should be a JSON object of the following format as well (`"ios"`, 
 ## Using the ionic.io dash
 
 In addition to the API, ionic.io provides a powerful tool for scheduling and targeting push notifications.  This feature
-leverages <a href="/identify">Ionic Identify</a> to let you pare down your users however you see fit.
+leverages <a href="/identify">Ionic User</a> to let you pare down your users however you see fit.
+
+To get started with it, simply go to https://apps.ionic.io/app/YOUR\_APP\_ID and click <strong>Push</strong>.

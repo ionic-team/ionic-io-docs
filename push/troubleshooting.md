@@ -6,4 +6,4 @@ layout: default
 Troubleshooting Ionic Push
 -------
 
-# Coming soon, yo!
+# Coming soon!
