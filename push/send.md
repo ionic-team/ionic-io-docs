@@ -78,6 +78,29 @@ resp = urllib2.urlopen(req)
 
 <strong>Please note: </strong>`"platform"` can be `"ios"`, `"android"`, or `"ios,android"` depending on device targets.
 
+## A handy tip
+
+In addition to the `onNotification` function described <a href="/push/installation">Here</a>, you can specify which 
+$state a notification should open your app to using the payload.  Below is an example JSON object highlighting this.
+
+```javascript
+{
+  "platform": "ios",
+  "tokens":["1f0ab62df8b5c672653dea8b01d1bab4dc1b15da93f99216b5ba0f621692a89f"],
+  "notification": {
+    "alert": "Basic push!",
+    "ios":{
+      "priority": 10,
+      "badge":2,
+      "payload":{ "$state": "about", "$stateParams": "{\"id\": 1}" }
+    }
+  }
+}
+```
+
 ## Using the ionic.io dash
 
-Coming soon...
+In addition to the API, ionic.io provides a powerful tool for scheduling and targeting push notifications.  This feature
+leverages <a href="/identify">Ionic User</a> to let you pare down your users however you see fit.
+
+To get started with it, simply go to https://apps.ionic.io/app/YOUR\_APP\_ID and click <strong>Push</strong>.
