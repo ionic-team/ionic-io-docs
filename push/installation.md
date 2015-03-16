@@ -48,7 +48,13 @@ file, but before `cordova.js`:
     angular.module('test', ['ionic.service.core', 'ionic.service.push'])
 ```
 
-## Step 2: Register your device
+## Step 2: Identify a user
+
+In order for push registration to work properly, you must register a user by following the guide for setting up the 
+<a href="/identify">Ionic User</a> service.  These users may be anonymous, and any data you store on them is entirely 
+optional, but they allow use of the powerful push notification dashboard later on.
+
+## Step 3: Register your device
 
 <strong>Please note:</strong> Push notifications require a physical device to run.  You will <strong>not</strong> be 
 able to test them on an emulator or with `ionic serve`.
