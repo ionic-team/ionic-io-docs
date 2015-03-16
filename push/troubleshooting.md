@@ -20,6 +20,27 @@ At the moment, you can find this information by going to <a href="apps.ionic.io"
 <strong>Ionic Services (alpha)</strong>.  Here you should see your <strong>App ID</strong>, 
 <strong>Public API Key</strong>, and <strong>Private API Key</strong>. 
 
+## I want my app to open to a specific state when I receive a notification.
+
+In addition to handling this in the `onNotification` function described <a href="/push/installation">Here</a>, you can 
+specify which $state a notification should open your app to using the payload.  Below is an example JSON object 
+highlighting this.
+
+```javascript
+{
+  "platform": "ios",
+  "tokens":["1f0ab62df8b5c672653dea8b01d1bab4dc1b15da93f99216b5ba0f621692a89f"],
+  "notification": {
+    "alert": "Basic push!",
+    "ios":{
+      "priority": 10,
+      "badge":2,
+      "payload":{ "$state": "about", "$stateParams": "{\"id\": 1}" }
+    }
+  }
+}
+```
+
 ## When I try to test my app, I get a "cannot read property 'pushNotification' of undefined" error.
 
 This error is often the result of testing push registration using `ionic serve` or a device emulator.  In these cases, 
