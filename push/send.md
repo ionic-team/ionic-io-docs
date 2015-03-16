@@ -23,23 +23,6 @@ Content-Type: application/json
 X-Ionic-Application-Id: YOUR_APP_ID
 ```
 
-In addition, your POST should authenticate using 
-<a href="http://en.wikipedia.org/wiki/Basic_access_authentication">Basic Access Authentication</a>, with no password and 
-your <strong>private API key</strong> for a username.  Below is an example of this using Python and urllib2:
-
-```python
-post_data = YOUR_POST_JSON_OBJECT
-app_id = YOUR_APP_ID
-app_key = YOUR_PRIVATE_API_KEY
-url = "https://push.ionic.io/api/v1/push"
-req = urllib2.Request(url, data=post_data)
-req.add_header("Content-Type", "application/json")
-req.add_header("X-Ionic-Application-Id", app_id)
-b64 = base64.encodestring('%s:%s' % (app_key, '')).replace('\n', '')
-req.add_header("Authorization", "Basic %s" % b64)
-resp = urllib2.urlopen(req)
-```
-
 The POST data should be a JSON object of the following format as well (`"ios"`, and `"android"` sections of 
 `"notification"` are optional customizations):
 
@@ -74,6 +57,23 @@ The POST data should be a JSON object of the following format as well (`"ios"`, 
     }
   }
 }
+```
+
+Finally, your POST should authenticate using 
+<a href="http://en.wikipedia.org/wiki/Basic_access_authentication">Basic Access Authentication</a>, with no password and 
+your <strong>private API key</strong> for a username.  Below is an example of this using Python and urllib2:
+
+```python
+post_data = YOUR_POST_JSON_OBJECT
+app_id = YOUR_APP_ID
+app_key = YOUR_PRIVATE_API_KEY
+url = "https://push.ionic.io/api/v1/push"
+req = urllib2.Request(url, data=post_data)
+req.add_header("Content-Type", "application/json")
+req.add_header("X-Ionic-Application-Id", app_id)
+b64 = base64.encodestring('%s:%s' % (app_key, '')).replace('\n', '')
+req.add_header("Authorization", "Basic %s" % b64)
+resp = urllib2.urlopen(req)
 ```
 
 <strong>Please note: </strong>`"platform"` can be `"ios"`, `"android"`, or `"ios,android"` depending on device targets.
