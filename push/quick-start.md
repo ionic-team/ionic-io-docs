@@ -16,7 +16,7 @@ Ionic Push is in alpha at the moment, so if you haven't already, install the alp
 following command:
 
 ```bash
-$ npm install -g ionic@1.4.0-alpha.5
+$ npm install -g ionic@1.4.0-alpha.6
 ```
 
 ## Step 1: Download the starter app
