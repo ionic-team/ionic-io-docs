@@ -28,7 +28,6 @@ The POST data should be a JSON object of the following format as well (`"ios"`, 
 
 ```javascript
 {
-  "platform":"ios,android",
   "tokens":[
     "b284a6f7545368d2d3f753263e3e2f2b7795be5263ed7c95017f628730edeaad",
     "d609f7cba82fdd0a568d5ada649cddc5ebb65f08e7fc72599d8d47390bfc0f20"
@@ -76,8 +75,6 @@ req.add_header("Authorization", "Basic %s" % b64)
 resp = urllib2.urlopen(req)
 ```
 
-<strong>Please note: </strong>`"platform"` can be `"ios"`, `"android"`, or `"ios,android"` depending on device targets.
-
 ## A handy tip
 
 In addition to the `onNotification` function described <a href="/push/installation">Here</a>, you can specify which 
@@ -85,7 +82,6 @@ $state a notification should open your app to using the payload.  Below is an ex
 
 ```javascript
 {
-  "platform": "ios",
   "tokens":["1f0ab62df8b5c672653dea8b01d1bab4dc1b15da93f99216b5ba0f621692a89f"],
   "notification": {
     "alert": "Basic push!",

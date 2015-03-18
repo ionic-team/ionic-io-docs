@@ -23,12 +23,11 @@ At the moment, you can find this information by going to <a href="apps.ionic.io"
 ## I want my app to open to a specific state when I receive a notification.
 
 In addition to handling this in the `onNotification` function described <a href="/push/installation">Here</a>, you can 
-specify which $state a notification should open your app to using the payload.  Below is an example JSON object 
+specify which $state a notification should open your app to using the push payload.  Below is an example JSON object 
 highlighting this.
 
 ```javascript
 {
-  "platform": "ios",
   "tokens":["1f0ab62df8b5c672653dea8b01d1bab4dc1b15da93f99216b5ba0f621692a89f"],
   "notification": {
     "alert": "Basic push!",
@@ -40,6 +39,10 @@ highlighting this.
   }
 }
 ```
+
+## I want to send my push to a list of tokens that contain both iOS and Android devices.
+
+This is totally A-OK!  Our backend will parse the tokens you send and automatically detect their platform.
 
 ## When I try to test my app, I get a "cannot read property 'pushNotification' of undefined" error.
 
