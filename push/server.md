@@ -27,13 +27,13 @@ your client code.  Below is an example POST body:
   received: '2015-03-18T17:21:42.571286',
   user_id: 1337,
   name: 'Test User',
-  app_id: 'e0dcfbf7',
+  app_id: 'YOUR_APP_ID',
   push: { android_tokens: [ 'APA91bHJIt_a6yuPl4S94aH4TNTu_KDZ1vB5oOJfURlZfeVSRCOPaPdwdwUwi6HUCAubpstaJZN3d8j8Ay-SpJEqgUf51VAL_i94ejU-O9HSYiFPNvWUSgOneFWlZY22xzk94iloAfX-l7jFsdvyU7m98szI6n7SysUYKrPAdf9svc2NFn_Du1tkwFdWSm1mJw7fiY76Eijx' ]  },
   message: 'I come from planet Ion' 
 }
 ```
 
-<strong>Note: </strong>`"android_token"` will be replaced with `"ios_token"` when an iOS device is registered.
+<strong>Note: </strong>`"android_tokens"` will be replaced with `"ios_tokens"` when an iOS device is registered.
 
 Our webhook system expects to receive a `2xx` response code from your server and if it doesn't it will retry 3 times at 
 30 minute intervals to deliver the webhook before it gives up.  The received key above is the UTC time that we received 
