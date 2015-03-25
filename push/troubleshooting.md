@@ -16,7 +16,7 @@ would like to remove it, simply make sure you are passing the argument `canShowA
 
 ## I can't find my App ID or API Key.
 
-At the moment, you can find this information by going to <a href="apps.ionic.io">apps.ionic.io</a>, login, and selecting 
+At the moment, you can find this information by going to <a href="http://apps.ionic.io">apps.ionic.io</a>, login, and selecting 
 <strong>Ionic Services (alpha)</strong>.  Here you should see your <strong>App ID</strong>, 
 <strong>Public API Key</strong>, and <strong>Private API Key</strong>. 
 
