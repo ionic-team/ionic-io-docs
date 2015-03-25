@@ -30,11 +30,11 @@ $ ionic upload
 ```
 
 Congratulations!  You now have a (nearly) working Ionic app all set and uploaded to 
-<a href="apps.ionic.io">apps.ionic.io</a>!  
+<a href="http://apps.ionic.io">apps.ionic.io</a>!  
 
 ## Step 2: Adding in your ID and API key
 
-First, we need to identify this app as your own!  Go to <a href="apps.ionic.io">apps.ionic.io</a>, login, and select 
+First, we need to identify this app as your own!  Go to <a href="http://apps.ionic.io">apps.ionic.io</a>, login, and select 
 <strong>Ionic Services (alpha)</strong>.  Here you should see your <strong>App ID</strong>, 
 <strong>Public API Key</strong>, and <strong>Private API Key</strong>. 
 
@@ -55,7 +55,7 @@ Now, open `www/js/app.js` in your Ionic app directory.  You should see a `.confi
 ```
 
 Replace `app_id` with your <strong>App ID</strong> and `api_key` with your <strong>Public API Key</strong> from 
-<a href="apps.ionic.io">apps.ionic.io</a>.
+<a href="http://apps.ionic.io">apps.ionic.io</a>.
 
 ## Step 3: Adding Platform Support
 
