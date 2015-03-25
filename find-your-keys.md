@@ -12,7 +12,7 @@ You will use these to authenticate with our APIs and enable services.
 
 Assuming you've uploaded your application to apps.ionic.io using `ionic upload` as described 
 <a href="/getting-started">here</a>, you can find your App ID easily on the 
-<a href="apps.ionic.io">landing page</a> as seen here: 
+<a href="https://apps.ionic.io">landing page</a> as seen here: 
 
 <img style="width:80%;" src="/img/ionic-io-app-id.png">
 
