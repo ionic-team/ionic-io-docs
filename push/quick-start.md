@@ -55,7 +55,7 @@ Now, open `www/js/app.js` in your Ionic app directory.  You should see a `.confi
 ```
 
 Replace `app_id` with your <strong>App ID</strong> and `api_key` with your <strong>Public API Key</strong> from 
-<a href="http://apps.ionic.io">apps.ionic.io</a>.
+<a href="http://apps.ionic.io">apps.ionic.io</a> (instructions for finding these <a href="/find-your-keys">here</a>).
 
 ## Step 3: Adding Platform Support
 
