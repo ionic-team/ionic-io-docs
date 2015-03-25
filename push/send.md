@@ -8,7 +8,7 @@ Ionic Push, Sending Messages
 
 Assuming you have registered some devices and uploaded your developer SSL certificates through the CLI, you're ready to 
 start sending some push notifications!  There are two main ways of accomplishing this; through the REST API and using 
-the <a href="apps.ionic.io">ionic.io</a> dashboard.
+the <a href="http://apps.ionic.io">ionic.io</a> dashboard.
 
 ## Using the REST API
 
