@@ -35,8 +35,8 @@ $ ionic add ionic-service-core
 Next, Add the following code into your `www/js/app.js` file:
 
 ```javascript
-// Add the 'ionic.services.core' module to your main angular module:
-angular.module('test', ['ionic.services.core'])
+// Add the 'ionic.service.core' module to your main angular module:
+angular.module('test', ['ionic.service.core'])
 // Identify App
 .config(['$ionicAppProvider', function($ionicAppProvider) {
   // Identify app
