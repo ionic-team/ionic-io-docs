@@ -32,7 +32,13 @@ Install the `ionic-service-core` client code:
 $ ionic add ionic-service-core
 ```
 
-Next, Add the following code into your `www/js/app.js` file:
+Next, add the script to the `www/index.html` file in your project:
+
+```html
+<script src="lib/ionic-service-core/ionic-core.js"></script>
+```
+
+Finally, Add the following code into your `www/js/app.js` file:
 
 ```javascript
 // Add the 'ionic.service.core' module to your main angular module:
