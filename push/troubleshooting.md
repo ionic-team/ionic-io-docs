@@ -8,6 +8,16 @@ Troubleshooting Ionic Push
 
 Below are some common issues with setting up Ionic Push, as well as their solutions.
 
+## How can I check the status of a queued push notification?
+
+When you queue a message for push, our server will return a `message_id` field that you can use to check the status of
+the notification.  Use the following `curl` (Edited with your `app_id`, `message_id`, and `private_api_key`) to quickly
+check up on a notification:
+
+```bash
+curl -H "Content-Type: application/json" -H "X-Ionic-Application-Id: [APP_ID]" https://push.ionic.io/api/v1/status/[message_id] -u [private_api_key]:
+```
+
 ## I always see "success: \[object\] \[object\]" when I register for notifications.
 
 This is a debug alert which we allow you to toggle in order to simplify testing push notification registration.  If you 
