@@ -7,6 +7,8 @@ layout: default
 Auto Tracking events
 ---
 
+** Autotracking is a WIP feature, proceed at your own risk **
+
 To enable smart auto tracking of events, add `ion-track-auto` to the `<body>` tag:
 
 ```html

@@ -7,28 +7,44 @@ layout: default
 Ionic Analytics JS API
 -----
 
-## `$ionicTrack`
+## `$ionicAnalytics`
 
-The `$ionicTrack` Angular service is used to send events to the Ionic Analytics system.
+The `$ionicAnalytics` service is used to send events to the Ionic Analytics system.
 
-Example:
+### `ionicAnalytics.track`
+
+Takes an eventName and eventData. Both are arbitrary, but the eventName
+should be the same as previous events if you wish to query on them later.
+
+The data should be a dictionary of whatever event properties you want to track.
+Nested objects are allowed, but arrays are discouraged. Keeping the structure
+of the data as simple and consistent as possible will make querying easy.
 
 ```javascript
-angular.module('myApp', ['ionic', 'ionic.services.analytics'])
+$ionicAnalytics.track('order', {
+  price: 39.99,
+  item: 'Time Machine'
+});
 
-.run(['$ionicTrack', function($ionicTrack) {
-  // The run function is useful for sending events on app load
-  $ionicTrack.track('load', {
-    'version': 1
-  });
-}])
+$ionicAnalytics.identify('post_created', {
+  length: 452,
+  topic: 'fruits'
+});
+```
 
-.controller(['$scope', '$ionicTrack', function($scope, $ionicTrack) {
-  $scope.newPost = function() {
-    // The run function is useful for sending events on app load
-    $ionicTrack.track('Post Created');
-  };
-}]);
+### `ionicAnalytics.identify`
+
+Shortcut to `$ionicUser.identify`
+
+### `ionicAnalytics.getDispatchInterval`, `ionicAnalytics.setDispatchInterval`
+
+To save battery usage, we cache events in memory and send them in batch every 30 seconds. To change this time interval, use `setDispatchInterval`. Use a dispatch interval of 0 to disable event batching and dispatch all events immediately.
+
+```javascript
+$ionicAnalytics.getDispatchInterval(); // 30
+
+// Dispatch events immediately (more battery-intensive)
+$ionicAnalytics.setDispatchInterval(0);
 ```
 
 ## `ion-track` Directive
