@@ -55,7 +55,7 @@ angular.module('test', ['ionic.service.core'])
 }])
 ```
 
-Replace `YOUR_APP_ID` and `YOUR_CLIENT_API_KEY` with the correct values from the app settings page of your app.  You can 
+Replace `YOUR_APP_ID` and `YOUR_CLIENT_API_KEY` with the correct values from the app settings page of your app.  You can
 find instructions for locating these <a href="/find-your-keys">here</a>.
 
 ## That's it!
