@@ -28,7 +28,11 @@ your client code.  Below is an example POST body:
   user_id: 1337,
   name: 'Test User',
   app_id: 'YOUR_APP_ID',
-  push: { android_tokens: [ 'APA91bHJIt_a6yuPl4S94aH4TNTu_KDZ1vB5oOJfURlZfeVSRCOPaPdwdwUwi6HUCAubpstaJZN3d8j8Ay-SpJEqgUf51VAL_i94ejU-O9HSYiFPNvWUSgOneFWlZY22xzk94iloAfX-l7jFsdvyU7m98szI6n7SysUYKrPAdf9svc2NFn_Du1tkwFdWSm1mJw7fiY76Eijx' ]  },
+  _push: {
+    android_tokens: [
+      'LIST', 'OF', 'ANDROID', 'TOKENS'
+    ]
+  },
   message: 'I come from planet Ion' 
 }
 ```
@@ -45,6 +49,21 @@ If a device token becomes invalid, the webhook will receive a HTTP POST with JSO
 {
   "ios_token":"b284a6f7545368d2d3f753263e3e2f2b7795be5263ed7c95017f628730edeaad",
   "token_invalid": true
+}
+```
+
+If a device becomes unregistered, your webhook will receive a POST with the following data.
+
+```javascript
+{
+  unregister: true,
+  received: '2015-03-25T16: 15: 00.773575',
+  _push: {
+    android_tokens: [
+      'LIST', 'OF', 'ANDROID', 'TOKENS'
+    ]
+  },
+  app_id: 'YOUR_APP_ID'
 }
 ```
 
