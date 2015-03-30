@@ -122,6 +122,8 @@ Because of the way Apple uses provisioning profiles, the app ID you specify on t
 
 ## Step 4: Hooking up ionic.io
 
+### Development
+
 Before Ionic.io can send notifications, we're going to need the push certificates you created in step 1.
 
 * Go to your Ionic project directory and execute the following command:
@@ -132,6 +134,23 @@ Before Ionic.io can send notifications, we're going to need the push certificate
 
 * The CLI will prompt for the location of your push cert, which should be your PFX (.p12) file. Paste it in and hit 
 enter. You should see a "Successfully uploaded certificate" message.
+
+### Production
+
+* Go to your Ionic project directory and execute the following command:
+
+```bash
+    $ ionic push --ios-prod-cert
+```
+
+* The CLI will prompt for the location of your push cert, which should be your PFX (.p12) file. Paste it in and hit
+enter. You should see a "Successfully uploaded certificate" message.
+
+* All you need to do now is turn on production mode for your app, which can be completed with the following command:
+
+```bash
+    $ ionic push --production-mode=y
+```
 
 ## All Done!
 
