@@ -35,3 +35,9 @@ $ionicUser.push('key', value, unique);
 
 This will add a `key: value` pair to the last user you identified.  If the `unique` value is set to `true`, the value 
 specified <strong>must be unique</strong>.
+
+## On promises
+
+Both `$ionicUser.identify()` and `$ionicUser.push()` return promises, so you may need to await their completion in your
+code (for example, in the case where you're registering for push notifications).  This can be handles simply with a
+`.then()` handler after their calls.
