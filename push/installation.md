@@ -37,6 +37,7 @@ code (<b>note:</b> make sure to run these commands in your Ionic/Cordova app's f
 file, but before `cordova.js`:
 
 ```html
+    <script src="lib/ionic-service-push/ionic-core.js"></script>
     <script src="lib/ionic-service-push/ionic-push.js"></script>
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
 ```
