@@ -30,7 +30,7 @@ code (<b>note:</b> make sure to run these commands in your Ionic/Cordova app's f
 ```bash
     $ ionic plugin add https://github.com/phonegap-build/PushPlugin.git
     $ ionic add ngCordova
-    $ ionic add ionic-service-push
+    $ bower install ionic-service-push#master
 ```
 
 * Next, we'll add the Push and ngCordova javascript to our `www/index.html` includes, right after the `ionic.bundle.js` 
