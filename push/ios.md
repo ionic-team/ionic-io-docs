@@ -55,6 +55,8 @@ show up as <strong>Configurable</strong>.
 
 <img style="width:100%;" src="/img/push-docs/app-confirm-screen.png">
 
+Make sure to click Submit at the bottom of this page to save your App ID!
+
 ### 1.3: Configuring the App ID
 
 Now that your App ID is successfully created, it's time to configure it to send some Push Notifications.
