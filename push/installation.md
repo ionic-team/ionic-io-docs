@@ -73,17 +73,18 @@ project (usually on startup or in a root controller).
       canShowAlert: false, //Should new pushes show an alert on your screen?
       onNotification: function(notification) {
         // Called for each notification.
-        // Use this to implement custom handling
       }
-    },
-    {
-      //This metadata will be passed to your webhook, if you have registered one
-      "user_id": 0, "email": "tester@example.com"
     }).then(function(deviceToken) {
       //Save the device token, if necessary
       $scope.token = deviceToken;
     });
 ```
+
+## Step 4: Getting device tokens
+
+Upon registration, the <strong>device token</strong> of your testing device will be visible in your console logs (you
+can also configure the service to send the token to a server of your own <a href="/push/server">here</a>).  Save this
+token, as you're going to need it to send push notifications later on.
 
 ## All done!
 

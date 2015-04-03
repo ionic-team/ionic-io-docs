@@ -65,6 +65,15 @@ able to test them on an emulator or with `ionic serve`.
 Depending on the platforms you're planning on supporting, you should now 
 follow either the <a href="/push/android">Android</a> or <a href="/push/ios">iOS</a> guide for device authentication.
 
+## Step 4: Getting device tokens
+
+Out of the box, your app will have a simple UI with 2 buttons; one for identifying a user and one to trigger the device
+registration with our push service.  You <strong>must</strong> identify before you register for push notifications (you
+can learn more about this service <a href="/identify">here</a>).
+
+Upon registration, the <strong>device token</strong> of your testing device will be visible in both your console logs
+and in the UI.  Save this token, as you're going to need it to send push notifications later on.
+
 ## All done!
 
 Congrats!  You now have a working Ionic app with push notifications!  Check out the guide on 
