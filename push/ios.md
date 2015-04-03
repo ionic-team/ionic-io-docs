@@ -28,10 +28,10 @@ an SSL certificate.
 
 ### 1.2: The App ID
 
-iOS applications installed on your development devices require an App ID.  For this example, you may use an ID that you 
+iOS applications installed on your development devices require a custom iOS App ID (not to be confused with your Ionic App ID).  For this example, you may use an ID that you 
 have already created, or create a new one.  We'll describe how to create a new one below.
 
-<strong>Note: </strong> As a convention, App ID's are represented as a reversed address (for example 
+<strong>Note: </strong> As a convention, iOS App ID's are represented as a reversed address (for example 
 `com.ionicframework.IonicPushApp`).
 
 * Go to the <a href="https://developer.apple.com/membercenter/index.action">Apple Developer Center</a>.
