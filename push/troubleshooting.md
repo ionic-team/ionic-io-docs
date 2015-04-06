@@ -8,6 +8,10 @@ Troubleshooting Ionic Push
 
 Below are some common issues with setting up Ionic Push, as well as their solutions.
 
+## $ionicPush.register does nothing or logs an error
+
+For iOS: If you see the error "no valid 'aps-environment' entitlement string found for application, " you *must* generate a new Provisioning Profile after enabling push notifications for your iOS App ID in the Apple Developer Center (see the <a href="/push/ios">iOS docs</a> for more info).
+
 ## How can I check the status of a queued push notification?
 
 When you queue a message for push, our server will return a `message_id` field that you can use to check the status of
