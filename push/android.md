@@ -34,8 +34,7 @@ list of enabled APIs should look something like the following:
 * In the sidebar on the left, select APIs & auth > Credentials.
 * Under Public API access, click Create new key.
 * In the Create a new key dialog, click Server key.
-* In the resulting configuration dialog, supply your server's IP address, or leave the box blank to allow connections 
-from any IP (It is inadvisable to do this on a production application).
+* In the resulting configuration dialog leave the box blank to allow connections from any IP.
 * Click <strong>Create</strong>.  You should see your newly created API key as below.
 * <strong>Save your API key!</strong>  You're going to need it later to hook up Ionic.io.
 
