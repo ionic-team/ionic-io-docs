@@ -71,9 +71,36 @@ project (usually on startup or in a root controller).
 ```javascript
     $ionicPush.register({
       canShowAlert: false, //Should new pushes show an alert on your screen?
+      canSetBadge: true, //Should new pushes be allowed to update app icon badges?
+      canPlaySound: false, //Should notifications be allowed to play a sound?
+      canRunActionsOnWake: true, // Whether to run auto actions outside the app,
       onNotification: function(notification) {
         // Called for each notification.
       }
+    }).then(function(deviceToken) {
+      //Save the device token, if necessary
+      $scope.token = deviceToken;
+    });
+```
+
+* <strong>Please note</strong>, you should have completed the call to `$ionicUser.identify()` before registering your 
+device for push notifications (described <a href="/identify">here</a>).  If you wish to identify users and register for 
+push notifications at the same time, you can modify your call to `$ionicPush.register()` to include a user object as 
+seen below:
+
+```javascript
+    $ionicPush.register({
+      canShowAlert: false, //Should new pushes show an alert on your screen?
+      canSetBadge: true, //Should new pushes be allowed to update app icon badges?
+      canPlaySound: false, //Should notifications be allowed to play a sound?
+      canRunActionsOnWake: true, // Whether to run auto actions outside the app,
+      onNotification: function(notification) {
+        // Called for each notification.
+      }
+    }, {
+      user_id: 'ionic101',
+      username: 'ionitron',
+      age: 9001
     }).then(function(deviceToken) {
       //Save the device token, if necessary
       $scope.token = deviceToken;

@@ -14,11 +14,11 @@ you're going to need your <strong>Public API Key</strong>, <strong>Private API K
 ## Send a push notification
 
 ```bash
-curl -u [PRIVATE_API_KEY]: -H "Content-Type: application/json" -H "X-Ionic-Application-Id: [APP_ID]" https://push.ionic.io/api/v1/push -d '{"tokens":["[RECIPIENT_TOKENS]"],"notification":{"alert":"I come from planet Ion."}}'
+curl -u PRIVATE_API_KEY: -H "Content-Type: application/json" -H "X-Ionic-Application-Id: APP_ID" https://push.ionic.io/api/v1/push -d '{"tokens":["RECIPIENT_TOKENS"],"notification":{"alert":"I come from planet Ion."}}'
 ```
 
 ## Check the status of a queued push notification
 
 ```bash
-curl -H "Content-Type: application/json" -H "X-Ionic-Application-Id: [APP_ID]" https://push.ionic.io/api/v1/status/[message_id] -u [private_api_key]:
+curl -H "Content-Type: application/json" -H "X-Ionic-Application-Id: APP_ID" https://push.ionic.io/api/v1/status/message_id -u PRIVATE_API_KEY:
 ```
