@@ -107,6 +107,9 @@ seen below:
     });
 ```
 
+* <strong>Note</strong>, in general, you want to call `$ionicUser.identify()` <strong>every time</strong> the current 
+user data is updated.  Passing user data to register is merely a convenience to simplify notification registration.
+
 ## Step 4: Getting device tokens
 
 Upon registration, the <strong>device token</strong> of your testing device will be visible in your console logs (you
