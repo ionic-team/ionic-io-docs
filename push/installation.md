@@ -83,10 +83,10 @@ project (usually on startup or in a root controller).
     });
 ```
 
-* <strong>Please note</strong>, you should have completed the call to `$ionicUser.identify()` before registering your 
-device for push notifications (described <a href="/identify">here</a>).  If you wish to identify users and register for 
-push notifications at the same time, you can modify your call to `$ionicPush.register()` to include a user object as 
-seen below:
+* While you will probably have completed the call to `$ionicUser.identify()` before registering your device for push 
+notifications (described <a href="/identify">here</a>), if you wish to identify users and register for push 
+notifications at the same time, you can modify your call to `$ionicPush.register()` to include a user object as seen 
+below:
 
 ```javascript
     $ionicPush.register({
