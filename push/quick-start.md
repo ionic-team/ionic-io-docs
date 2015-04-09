@@ -8,7 +8,11 @@ Ionic Push Quick Start
 
 Want to dive in to Ionic Push as quickly as possible?  Let's get started!
 
-We've built a simple push notification starter app that, once configured, can be modified to your heart's content.
+For a full step-by-step process for configuring Ionic Push with iOS, watch the video below:
+
+<iframe style="margin: auto" width="660" height="345" src="https://www.youtube.com/embed/yVfEHHs_Fo4" frameborder="0" allowfullscreen></iframe>
+
+We've also built a simple [push notification starter](http://github.com/driftyco/ionic-starter-push) app that, once configured, can be modified to your heart's content.
 
 ## Step 0: Set up your environment
 
